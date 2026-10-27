@@ -1,0 +1,20 @@
+# Checks every 4 hours for a new xtermium release and commits the manifest bump (checkver/autoupdate).
+name: Excavator
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 */4 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  excavate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ScoopInstaller/GithubActions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SKIP_UPDATED: '1'
