@@ -1,6 +1,6 @@
 {
-    "version": "0.1.0-build.46",
-    "description": "Terminal with a session manager: SSH, SFTP, RDP, VNC, telnet, serial, BMC consoles, websites and tunnels.",
+    "version": "0.1.0-build.47",
+    "description": "Cross-platform terminal and session manager with web/file browsers and AI. Every connection you have, in one window. Written in Rust and Svelte.",
     "homepage": "https://xtermium.com",
     "license": "AGPL-3.0-or-later",
     "notes": [
@@ -10,8 +10,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xtermium/xtermium/releases/download/v0.1.0-build.46/xtermium_0.1.0_x64_en-US.msi",
-            "hash": "68785ff018981995ab9b832e6ff76c0a48b21cf0c2523dfed971ee527e7785f6",
+            "url": "https://github.com/xtermium/xtermium/releases/download/v0.1.0-build.47/xtermium_0.1.0_x64_en-US.msi",
+            "hash": "009f173d2a154dc6d1e627ccdd081d14787033033373d3ae83bfdacd9ef71b10",
             "extract_dir": "PFiles\\xtermium"
         }
     },
