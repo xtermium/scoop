@@ -10,9 +10,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xtermium/xtermium/releases/download/v0.1.0-build.47/xtermium_0.1.0_x64_en-US.msi",
-            "hash": "009f173d2a154dc6d1e627ccdd081d14787033033373d3ae83bfdacd9ef71b10",
-            "extract_dir": "PFiles\\xtermium"
+            "url": "https://github.com/xtermium/xtermium/releases/download/v0.1.0/xtermium_0.1.0_x64-portable.zip",
+            "hash": "009f173d2a154dc6d1e627ccdd081d14787033033373d3ae83bfdacd9ef71b10"
         }
     },
     "env_add_path": ".",
@@ -31,7 +30,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/xtermium/xtermium/releases/download/v$version/xtermium_$version_x64_en-US.msi"
+                "url": "https://github.com/xtermium/xtermium/releases/download/v$version/xtermium_$version_x64-portable.zip"
             }
         }
     }
