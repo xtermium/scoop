@@ -1,8 +1,8 @@
 {
-    "version": "0.1.0-build.47",
+    "version": "0.1.1",
     "description": "Cross-platform terminal and session manager with web/file browsers and AI. Every connection you have, in one window. Written in Rust and Svelte.",
     "homepage": "https://xtermium.com",
-    "license": "AGPL-3.0-or-later",
+    "license": "Apache-2.0",
     "notes": [
         "Sessions, tabs, trusted host keys and settings live in $persist_dir (XTERMIUM_HOME),",
         "so updates and reinstalls keep them. 'scoop uninstall --purge xtermium' deletes them.",
@@ -10,8 +10,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xtermium/xtermium/releases/download/v0.1.0-build.47/xtermium_0.1.0_x64_en-US.msi",
-            "hash": "009f173d2a154dc6d1e627ccdd081d14787033033373d3ae83bfdacd9ef71b10",
+            "url": "https://github.com/xtermium/xtermium/releases/download/v0.1.1/xtermium_0.1.1_x64_en-US.msi",
+            "hash": "7daa829302c00a7de395463672df40ae4ade626b37d11220401b564e16e59e5c",
             "extract_dir": "PFiles\\xtermium"
         }
     },
@@ -25,15 +25,13 @@
     "env_set": {
         "XTERMIUM_HOME": "$persist_dir"
     },
-    "persist": "logs",
     "checkver": {
-        "github": "https://github.com/xtermium/xtermium",
-        "regex": "(?:/releases/tag/|^)v(?<version>(?<short>[\\d.]+)-build\\.\\d+)"
+        "github": "https://github.com/xtermium/xtermium"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/xtermium/xtermium/releases/download/v$version/xtermium_$matchShort_x64_en-US.msi"
+                "url": "https://github.com/xtermium/xtermium/releases/download/v$version/xtermium_$version_x64_en-US.msi"
             }
         }
     }
