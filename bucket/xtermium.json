@@ -1,5 +1,5 @@
 {
-    "version": "0.6.0",
+    "version": "0.7.0",
     "description": "Cross-platform terminal and session manager with web/file browsers and AI. Every connection you have, in one window. Written in Rust and Svelte.",
     "homepage": "https://xtermium.com",
     "license": "Apache-2.0",
@@ -10,8 +10,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xtermium/xtermium/releases/download/v0.6.0/xtermium_0.6.0_x64_en-US.msi",
-            "hash": "de53669e51835957dfd3d66575febbcbb9d318c6585b0da2803dcf6cf53a1cf2",
+            "url": "https://github.com/xtermium/xtermium/releases/download/v0.7.0/xtermium_0.7.0_x64_en-US.msi",
+            "hash": "fb2b3203304e19f5f00d5fbc0423e47c18d0568350b1c695e24582721c6cb6d3",
             "extract_dir": "PFiles\\xtermium"
         }
     },
