@@ -1,5 +1,5 @@
 {
-    "version": "20261109.083643",
+    "version": "20261110.035328",
     "description": "xtermium's nightly build: main as it stands, before a release carries it. Cross-platform terminal and session manager with web/file browsers and AI.",
     "homepage": "https://xtermium.com",
     "license": "Apache-2.0",
@@ -13,7 +13,7 @@
         "64bit": {
             "url": "https://github.com/xtermium/xtermium/releases/download/nightly/xtermium_nightly_x64_en-US.msi",
             "extract_dir": "PFiles\\xtermium",
-            "hash": "70a1ef23825bf67e29f33b67bc1785bba923246e8716505e1dcfbf8a10c565ce"
+            "hash": "0e587eeb4130a1966a1027e0ac033307782944cf81f7eb7e0706a9d0c2e59e06"
         }
     },
     "env_add_path": ".",
