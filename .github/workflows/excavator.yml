@@ -1,10 +1,12 @@
-# Checks every 4 hours for a new xtermium release and commits the manifest bump (checkver/autoupdate).
+# Checks every hour for a new xtermium release or nightly build and commits the manifest bump
+# (checkver/autoupdate). Hourly: the nightly's files change under the same URL, so its hash is
+# stale until this runs.
 name: Excavator
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 */4 * * *'
+    - cron: '20 * * * *'
 
 permissions:
   contents: write

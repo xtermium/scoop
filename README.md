@@ -22,12 +22,11 @@ Scoop unpacks xtermium without running an installer, and sets `XTERMIUM_HOME` (x
 ```powershell
 scoop uninstall xtermium          # the release, if it is installed: your data stays
 scoop install xtermium/xtermium-nightly
-scoop config update_nightly true  # once: Scoop then updates nightly builds, by their date
 scoop update xtermium-nightly     # the latest night's build (close xtermium first)
 ```
 
-- Scoop doesn't check a nightly download against a hash: the file changes every night.
-- Without `update_nightly`, Scoop calls any installed nightly build the latest; `scoop update -f xtermium-nightly` then gets the current one. With it, `scoop update xtermium-nightly` and `scoop update *` take a new build once a day.
+- Each nightly build gets its own version, its build time (`20261109.083643`), and its hash: Excavator picks up a new one within the hour, and `scoop update xtermium-nightly` or `scoop update *` takes it.
+- Installing in the hour between a new build and Excavator's bump fails on the hash: wait for the bump.
 - Back to the release: `scoop uninstall xtermium-nightly`, then `scoop install xtermium/xtermium`.
 
-New releases reach the bucket on their own: [Excavator](.github/workflows/excavator.yml) checks every 4 hours.
+New releases and nightly builds reach the bucket on their own: [Excavator](.github/workflows/excavator.yml) checks every hour.
